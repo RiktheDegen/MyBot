@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Mybot from './Mybotbckend';
 
-const BotEmbed = ({ assistantId, title, theme }) => {
+const MyBotEmbed = ({ assistantId, title, theme }) => {
   const [collapsed, setCollapsed] = useState(true);
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState('');
@@ -44,4 +44,4 @@ const BotEmbed = ({ assistantId, title, theme }) => {
 };
 
 
-export default BotEmbed;
+export default MyBotEmbed;
