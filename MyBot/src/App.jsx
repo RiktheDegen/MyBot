@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Mybot from './Mybotbckend';
+import './App.css'
 
 const AppEmbed = ({ assistantId, title, theme }) => {
   const [collapsed, setCollapsed] = useState(true);
