@@ -33,7 +33,7 @@ const AppEmbed = ({ assistantId, title, theme }) => {
 
 
   return (
-    <div className="chatbot-embed">
+    <div >
       <Mybot
         assistantId={assistantId}
         title={title}

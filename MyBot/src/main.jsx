@@ -3,8 +3,14 @@ import ReactDOM from 'react-dom/client'
 import AppEmbed from './App.jsx'
 import './index.css'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <AppEmbed />
-  </React.StrictMode>,
-)
+
+const widgetDivs = document.querySelectorAll('.Api-chat-widget');
+
+widgetDivs.forEach(div => {
+  ReactDOM.render(
+    <React.StrictMode>
+      <AppEmbed />
+    </React.StrictMode>,
+      div
+  );
+});
