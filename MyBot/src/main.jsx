@@ -6,6 +6,8 @@ import './index.css'
 
 const widgetDivs = document.querySelectorAll('.Api-chat-widget');
 
+console.log(widgetDivs);
+
 widgetDivs.forEach(div => {
  const root = ReactDOM.createRoot(div);
  root.render(
@@ -14,3 +16,5 @@ widgetDivs.forEach(div => {
    </React.StrictMode>
  );
 });
+
+
