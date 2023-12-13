@@ -15,7 +15,7 @@ const AppEmbed = (props) => {
     // 2. Extract configuration attributes
     // 3. Initialize the chat bot with the extracted configuration
     // Update the state accordingly
-    setLocalAssistantId(assistantId);
+    setLocalAssistantId(props.symbol);
   
     // ...
   
@@ -31,14 +31,11 @@ const AppEmbed = (props) => {
     }
   };
 
-
+  console.log(props.symbol);
   return (
+    
     <div >
-      <Mybot
-        assistantId= {props.assistantId}
-        // title={title}
-        // theme={theme}
-      />
+      <Mybot symbol={props.symbol}/>
     </div>
   );
 

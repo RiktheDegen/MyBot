@@ -10,9 +10,10 @@ console.log(widgetDivs);
 
 widgetDivs.forEach(div => {
  const root = ReactDOM.createRoot(div);
+ console.log(div.dataset.symbol);
  root.render(
    <React.StrictMode>
-     <AppEmbed assistantId={div.dataset.assistantId}/>
+    <AppEmbed symbol={div.dataset.symbol}/>
    </React.StrictMode>
  );
 });

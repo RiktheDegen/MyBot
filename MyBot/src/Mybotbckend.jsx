@@ -14,9 +14,9 @@ export const defaultConfig = {
 //new comment to check if git is working 
 const Mybot = (props) => {
 
+  const assistantId = props.symbol;
+  const userAssitant = assistantId;
   
-  const userAssitant = props.assistantId;
-  console.log(userAssitant);
 
   const [collapsed, setCollapsed] = useState(true);
   const [messages, setMessages] = useState([]);
@@ -35,7 +35,7 @@ const Mybot = (props) => {
     setNewMessage('');
   
     try {
-      const response = await axios.post('http://localhost:3001/api/messages', {
+      const response = await axios.post('https://lorem-ipsum-demo-3115728536ba.herokuapp.com/api/messages', {
         text: newMessage,
         assistant: userAssitant,
       });
