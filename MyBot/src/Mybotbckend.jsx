@@ -35,7 +35,7 @@ const Mybot = (props) => {
     setNewMessage('');
   
     try {
-      const response = await axios.post('https://lorem-ipsum-demo-3115728536ba.herokuapp.com/api/messages', {
+      const response = await axios.post('http://localhost:3001/api/messages', {
         text: newMessage,
         assistant: userAssitant,
       });
