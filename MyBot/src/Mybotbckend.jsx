@@ -39,9 +39,9 @@ const Mybot = (props) => {
         text: newMessage,
         assistant: userAssitant,
       });
-  
+  //sample comment
       const botResponse = response.data.botResponse?.text;
-      console.log('Received API reply');
+      console.log('Received API reply rn');
   
       if (botResponse !== undefined) {
         const formattedBotResponse = formatBotResponse(botResponse);
