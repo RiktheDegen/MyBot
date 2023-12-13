@@ -16,7 +16,7 @@ const Mybot = (props) => {
 
   
   const userAssitant = props.assistantId;
-  
+  console.log(userAssitant);
 
   const [collapsed, setCollapsed] = useState(true);
   const [messages, setMessages] = useState([]);
