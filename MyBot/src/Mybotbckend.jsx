@@ -12,10 +12,10 @@ export const defaultConfig = {
 
 
 //new comment to check if git is working 
-const Mybot = ({ UserId, AssistantId, title, theme}) => {
+const Mybot = (props) => {
 
   
-  const userAssitant = AssistantId;
+  const userAssitant = props.assistantId;
   
 
   const [collapsed, setCollapsed] = useState(true);

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Mybot from './Mybotbckend';
 import './App.css'
 
-const AppEmbed = ({ assistantId, title, theme }) => {
+const AppEmbed = (props) => {
   const [collapsed, setCollapsed] = useState(true);
   const [messages, setMessages] = useState([]);
   const [newMessage, setNewMessage] = useState('');
@@ -35,9 +35,9 @@ const AppEmbed = ({ assistantId, title, theme }) => {
   return (
     <div >
       <Mybot
-        assistantId={assistantId}
-        title={title}
-        theme={theme}
+        assistantId= {props.assistantId}
+        // title={title}
+        // theme={theme}
       />
     </div>
   );

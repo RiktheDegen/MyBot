@@ -12,7 +12,7 @@ widgetDivs.forEach(div => {
  const root = ReactDOM.createRoot(div);
  root.render(
    <React.StrictMode>
-     <AppEmbed />
+     <AppEmbed assistantId={div.dataset.assistantId}/>
    </React.StrictMode>
  );
 });
